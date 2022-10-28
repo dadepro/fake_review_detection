@@ -12,8 +12,8 @@ from sklearn.svm import SVC
 import xgboost as xgb
 
 # datasets
-df = pd.read_csv('product_level_data_with_img_feats.csv')
-df_text = pd.read_csv('product_level_data_text_feats.csv')
+df = pd.read_csv('product_level_data_with_img_feats.csv.gz')
+df_text = pd.read_csv('product_level_data_text_feats.csv.gz')
 
 # features
 review_features = ['tfidf_review_body', 'n_of_reviews','avg_review_rating',
