@@ -8,7 +8,7 @@ from sklearn.cluster import KMeans
 
 ################################# DATASETS
 # reviews
-reviews = pd.read_csv('UCSD_home_and_kitchen_reviews.csv')
+reviews = pd.read_csv('UCSD_home_and_kitchen_reviews.csv.gz')
 
 print("Number of products, reviews, and reviewers in reviews dataset:", \
 				len(reviews.product_ID.unique()),\
@@ -16,10 +16,10 @@ print("Number of products, reviews, and reviewers in reviews dataset:", \
 				len(reviews.reviewer_ID.unique()))
 
 # UCSD product level data
-df_ucsd = pd.read_csv('UCSD_product_level_data.csv')
+df_ucsd = pd.read_csv('UCSD_product_level_data.csv.gz')
 
 # our data
-df_ours = pd.read_csv('product_level_data_without_img_feats.csv')
+df_ours = pd.read_csv('product_level_data_without_img_feats.csv.gz')
 
 ############################ FUNCTIONS
 
