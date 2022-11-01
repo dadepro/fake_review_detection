@@ -2,6 +2,14 @@
 
 ### Datasets description
 
+There are five datasets that are needed for replication:
+
+1. **product_level_data_text_feats.csv.gz**: 
+2. **product_level_data_with_img_feats.csv.gz**: 
+3. **product_level_data_without_img_feats.csv.gz**: 
+4. **UCSD_product_level_data.csv.gz**: 
+5. **UCSD_home_and_kitchen_reviews.csv.gz** (due to its large size (~ 1GB), this dataset needs to be downloaded using this [link](https://www.dropbox.com/s/o2jv9uw7emd0dgy/UCSD_home_and_kitchen_reviews.csv.gz?dl=0)): 
+
 ### Code
 The code is written with Python 3.9.12. 
 
