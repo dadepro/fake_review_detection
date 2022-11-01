@@ -17,12 +17,12 @@ The code is written with Python 3.9.12.
 
 Under the folder "code", there are two scripts:
 
-1. **classification.py** which will reproduce the supervised results discussed in the paper. It equires the product-level data (see items 1 and 2 above in the datasets description) that contain the metadata, image, network, and text features included in the "data" folder. To run the script simply type:
+1. **classification.py** which will reproduce the supervised results discussed in the paper. It equires the product-level data (datasets 1 and 2) that contain the metadata, image, network, and text features included in the "data" folder. To run the script simply type:
     
   ```
    python classification.py
   ```
-2.  **clustering.py** which will reproduce the unsupervised results discussed in the paper. It requires the product-level data (see items 3 and 4 above in the datasets description) included in the "data" folder and an additional file containing review-level data that can be downloaded from [here](https://www.dropbox.com/s/o2jv9uw7emd0dgy/UCSD_home_and_kitchen_reviews.csv.gz?dl=0). Tu run the script, simply type:
+2.  **clustering.py** which will reproduce the unsupervised results discussed in the paper. It requires the product-level data (datasets 3 and 4) and review-level data (dataset 5) that can be downloaded from [here](https://www.dropbox.com/s/o2jv9uw7emd0dgy/UCSD_home_and_kitchen_reviews.csv.gz?dl=0). Tu run the script, simply type:
   ```
    python clustering.py
   ```
