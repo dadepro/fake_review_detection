@@ -4,23 +4,25 @@
 
 There are five datasets that are needed for replication:
 
-1. **product_level_data_text_feats.csv.gz**: 
-2. **product_level_data_with_img_feats.csv.gz**: 
-3. **product_level_data_without_img_feats.csv.gz**: 
-4. **UCSD_product_level_data.csv.gz**: 
-5. **UCSD_home_and_kitchen_reviews.csv.gz** (due to its large size (~ 1GB), this dataset needs to be downloaded using this [link](https://www.dropbox.com/s/o2jv9uw7emd0dgy/UCSD_home_and_kitchen_reviews.csv.gz?dl=0)): 
+1. **product_level_data_text_feats.csv.gz**: Product-level data that contain top-1000 TF-IDF features of products along with product IDs and binary labels (i.e., fake: 1 means product buys fake reviews and 0 otherwise.) 
+2. **product_level_data_with_img_feats.csv.gz**: Product-level data that contain metadata, network, and image features of products along with product IDs and labels.  
+3. **product_level_data_without_img_feats.csv.gz**: Product-level data that contain metadata and network features of products along with product IDs and labels. 
+4. **UCSD_product_level_data.csv.gz**: Product-level data that contain metadata and network features of products in the home and kitchen reviews dataset below.
+5. **UCSD_home_and_kitchen_reviews.csv.gz** (due to its large size (~ 1GB), this dataset needs to be downloaded using this [link](https://www.dropbox.com/s/o2jv9uw7emd0dgy/UCSD_home_and_kitchen_reviews.csv.gz?dl=0)):  Review-level data that contain home and kitchen reviews of products used to obtain product-level data in item (4) above. 
+
+See Table 1 in the [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4147920) for description of features.
 
 ### Code
 The code is written with Python 3.9.12. 
 
 Under the folder "code", there are two scripts:
 
-1. **classification.py** which will reproduce the supervised results discussed in the paper. It equires the product-level data that contain the metadata, image, network, and text features included in the "data" folder. To run the script simply type:
+1. **classification.py** which will reproduce the supervised results discussed in the paper. It equires the product-level data (see items 1 and 2 above in the datasets description) that contain the metadata, image, network, and text features included in the "data" folder. To run the script simply type:
     
   ```
    python classification.py
   ```
-2.  **clustering.py** which will reproduce the unsupervised results discussed in the paper. It requires the product-level data included in the "data" folder and an additional file containing review-level data that can be downloaded from [here](https://www.dropbox.com/s/o2jv9uw7emd0dgy/UCSD_home_and_kitchen_reviews.csv.gz?dl=0). Tu run the script, simply type:
+2.  **clustering.py** which will reproduce the unsupervised results discussed in the paper. It requires the product-level data (see items 3 and 4 above in the datasets description) included in the "data" folder and an additional file containing review-level data that can be downloaded from [here](https://www.dropbox.com/s/o2jv9uw7emd0dgy/UCSD_home_and_kitchen_reviews.csv.gz?dl=0). Tu run the script, simply type:
   ```
    python clustering.py
   ```
