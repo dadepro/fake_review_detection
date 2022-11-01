@@ -4,13 +4,13 @@
 
 There are five datasets that are needed for replication:
 
-1. **product_level_data_text_feats.csv.gz**: Product-level data that contains top-1000 TF-IDF features of products along with product ID and fake review product label (fake = 1 if the product buys fake reviews, 0 otherwise.) 
-2. **product_level_data_with_img_feats.csv.gz**: Product-level data that contains metadata, network, and image features of products along with product ID and fake review product label (fake = 1 if the product buys fake reviews, 0 otherwise.)
-3. **product_level_data_without_img_feats.csv.gz**: Product-level data that contains metadata and network features of products along with product ID and fake review product label (fake = 1 if the product buys fake reviews, 0 otherwise.)
-4. **UCSD_product_level_data.csv.gz**: Product-level data that contain metadata and network features of products in the home and kitchen category from UCSD [Amazon Review Data](https://nijianmo.github.io/amazon/index.html).
-5. **UCSD_home_and_kitchen_reviews.csv.gz** (due to its large size (~ 1GB), this dataset needs to be downloaded using this [link](https://www.dropbox.com/s/o2jv9uw7emd0dgy/UCSD_home_and_kitchen_reviews.csv.gz?dl=0)):  Review-level data that contains home and kitchen reviews of products used to obtain product-level data in item (4) above. 
+1. **product_level_data_text_feats.csv.gz**: Product-level data that contains top-1000 TF-IDF features along with product ID and fake review product label (fake = 1 if the product buys fake reviews, 0 otherwise.) 
+2. **product_level_data_with_img_feats.csv.gz**: Product-level data that contains metadata, network, and image features along with product ID and fake review product label (fake = 1 if the product buys fake reviews, 0 otherwise.)
+3. **product_level_data_without_img_feats.csv.gz**: Product-level data that contains metadata and network features along with product ID and fake review product label (fake = 1 if the product buys fake reviews, 0 otherwise.)
+4. **UCSD_product_level_data.csv.gz**: Product-level data that contain metadata and network features of products in the home and kitchen category part of the UCSD [Amazon Review Data](https://nijianmo.github.io/amazon/index.html).
+5. **UCSD_home_and_kitchen_reviews.csv.gz** (due to its large size (~ 1GB), this dataset needs to be downloaded using this [link](https://www.dropbox.com/s/o2jv9uw7emd0dgy/UCSD_home_and_kitchen_reviews.csv.gz?dl=0)):  Review-level data that contains home and kitchen reviews of the products used to obtain product-level data in dataset 4 above. 
 
-See Table 1 in the [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4147920) for description of features.
+See Table 1 in the [paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4147920) for description of the features.
 
 ### Code
 The code is written with Python 3.9.12. 
