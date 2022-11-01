@@ -17,4 +17,4 @@ Under the folder "code", there are two scripts:
    python clustering.py
   ```
 
-**Reference**: He, S., Hollenbeck, B., Overgoor, G., Proserpio, D., & Tosyali, A. (2022). Detecting Fake Review Buyers Using Network Structure: Direct Evidence from Amazon. Available on [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4147920).
+**Reference**: He, S., Hollenbeck, B., Overgoor, G., Proserpio, D., & Tosyali, A. (2022). Detecting Fake Review Buyers Using Network Structure: Direct Evidence from Amazon. The paper can be downloaded [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4147920).
