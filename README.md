@@ -1,4 +1,4 @@
-## Code and data for the paper entitled *Detecting Fake Review Buyers Using Network Structure: Direct Evidence from Amazon
+## Code and data for "Detecting Fake Review Buyers Using Network Structure: Direct Evidence from Amazon"
 
 ### Datasets description
 
